@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Bot, Send, Mic, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -8,13 +8,6 @@ export default function AetherAssistant() {
     { role: 'system', content: 'AetherVision AI Online. Ready for query.' }
   ]);
   const [input, setInput] = useState("");
-  const messagesEndRef = useRef<HTMLDivElement>(null);
-
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  useEffect(scrollToBottom, [messages]);
 
   const handleSend = (e: React.FormEvent) => {
     e.preventDefault();
@@ -23,11 +16,11 @@ export default function AetherAssistant() {
     setMessages(prev => [...prev, { role: 'user', content: input }]);
     setInput("");
 
-    // Mock AI Response
+    // Mock AI Response with cleaner text
     setTimeout(() => {
       setMessages(prev => [...prev, { 
         role: 'system', 
-        content: `Analyzing request: "${input}"... \nCalculating optimal urban intervention vectors based on current pollution telemetry. Suggest prioritizing localized smog tower deployment in Sector 7.` 
+        content: `Analyzing request: "${input}"... \nSuggestion: Prioritize localized smog tower deployment in high-density zones to reduce particulate matter by 15%.` 
       }]);
     }, 1000);
   };
@@ -55,7 +48,7 @@ export default function AetherAssistant() {
             {/* Header */}
             <div className="p-4 border-b border-white/10 bg-neon-purple/10 flex items-center gap-3">
               <div className="w-2 h-2 rounded-full bg-neon-green animate-pulse" />
-              <h3 className="font-orbitron text-white text-sm tracking-wider">AETHER<span className="text-neon-purple">AI</span> ASSISTANT</h3>
+              <h3 className="font-orbitron text-white text-sm tracking-wider">AetherAI Assistant</h3>
             </div>
 
             {/* Messages */}
@@ -75,14 +68,10 @@ export default function AetherAssistant() {
                   </div>
                 </div>
               ))}
-              <div ref={messagesEndRef} />
             </div>
 
             {/* Input */}
             <form onSubmit={handleSend} className="p-4 border-t border-white/10 bg-black/20 flex gap-2">
-              <button type="button" className="p-2 text-gray-400 hover:text-neon-cyan transition-colors">
-                <Mic size={18} />
-              </button>
               <input 
                 type="text" 
                 value={input}

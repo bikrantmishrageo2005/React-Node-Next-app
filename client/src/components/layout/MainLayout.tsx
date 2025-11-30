@@ -45,12 +45,15 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
         !sidebarOpen && "-translate-x-64"
       )}>
         <div className="flex flex-col gap-2 pr-4">
-          <SidebarItem icon={LayoutDashboard} label="Dashboard" href="/" active={location === "/"} />
-          <SidebarItem icon={Layers} label="Pollution All Type" href="/pollution-types" active={location === "/pollution-types"} />
-          <SidebarItem icon={Activity} label="Analysis" href="/analysis" active={location === "/analysis"} />
-          <SidebarItem icon={Shield} label="Guardians" href="/guardians" active={location === "/guardians"} />
+          <div className="px-6 mb-4 text-xs text-gray-500 font-bold uppercase tracking-widest">Main Modules</div>
+          <SidebarItem icon={LayoutDashboard} label="Control Hub" href="/" active={location === "/"} />
+          <SidebarItem icon={Layers} label="Pollution Matrix" href="/pollution-types" active={location === "/pollution-types"} />
+          <SidebarItem icon={MapIcon} label="Global Map View" href="/map" active={location === "/map"} />
+          
+          <div className="px-6 mb-4 mt-6 text-xs text-gray-500 font-bold uppercase tracking-widest">System Core</div>
+          <SidebarItem icon={Activity} label="Deep Analysis" href="/analysis" active={location === "/analysis"} />
+          <SidebarItem icon={Shield} label="Guardian Grid" href="/guardians" active={location === "/guardians"} />
           <SidebarItem icon={Zap} label="Omega Core" href="/omega" active={location === "/omega"} />
-          <SidebarItem icon={MapIcon} label="India Map" href="/map" active={location === "/map"} />
         </div>
 
         <div className="absolute bottom-8 left-0 w-full px-6">
@@ -58,7 +61,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
             <h4 className="text-neon-cyan font-orbitron text-xs mb-2">SYSTEM STATUS</h4>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-neon-green animate-pulse" />
-              <span className="text-xs text-gray-400 font-rajdhani">ONLINE - STABLE</span>
+              <span className="text-xs text-gray-400 font-rajdhani">System Online - Stable</span>
             </div>
           </div>
         </div>
@@ -79,7 +82,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
               {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
             <h1 className="font-orbitron text-xl md:text-2xl font-bold bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">
-              AETHER<span className="text-neon-cyan">VISION</span>
+              Aether<span className="text-neon-cyan">Vision</span>
             </h1>
           </div>
 

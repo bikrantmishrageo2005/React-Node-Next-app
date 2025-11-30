@@ -1,0 +1,154 @@
+Upgrade the CURRENT AetherVision UltraGuardian app. 
+Do NOT create a new project. 
+Modify and improve the existing codebase.
+
+There are TWO main tasks:
+1) Add 5 new Smart City features
+2) Fix and clean up ALL text / writing / labels in the UI
+
+====================================================
+TASK 1 — ADD 5 NEW SMART CITY FEATURES
+====================================================
+
+All 5 features must live INSIDE the "Smart City Control Hub" as new sections or panels.
+They must also connect with the existing city/state data, OmegaCore, and Guardians.
+
+--------------------------------------------
+FEATURE A — Citizen Live Sentiment Radar
+--------------------------------------------
+Add a new panel in the Smart City Control Hub:
+
+Name: "Citizen Sentiment Radar"
+
+For each city/state, show:
+• Live mood meter (Happy / Neutral / Stressed / Angry / Worried)
+• Sentiment score (0–100)
+• Short AI summary: "How citizens are feeling about pollution right now"
+Simulate data internally (no real social media API required).
+
+UI:
+• Circular radar or gauge
+• Color changes with sentiment (green → yellow → red)
+
+--------------------------------------------
+FEATURE B — Crime–Pollution Link Engine
+--------------------------------------------
+Add panel: "Crime–Pollution Link"
+
+For each city/state:
+• Show correlation between:
+  – Traffic congestion
+  – Heat stress
+  – Night-time pollution
+  – Crime risk index
+• AI explanation: how pollution & stress can increase crime risk
+• Simple graph: Pollution vs Crime trend
+
+Use simulated but consistent data.
+
+--------------------------------------------
+FEATURE C — Disaster Aftershock Pollution Tracker
+--------------------------------------------
+Add panel: "Disaster Aftershock Tracker"
+
+For each disaster type (flood, cyclone, earthquake, heatwave):
+• Show how pollution changes AFTER the event:
+  – Air pollution spike
+  – Water contamination
+  – Waste and debris impact
+• Timeline graph: Before → During → After disaster
+• AI text: "How long until the city recovers?"
+
+Integrate with Crisis Predictor and Guardians.
+
+--------------------------------------------
+FEATURE D — AI Green Budget Planner
+--------------------------------------------
+Add panel: "Green Budget Planner"
+
+For each city/state:
+• User can choose a budget slider (for example: 10 crore – 1000 crore)
+• AI shows:
+  – Best way to spend the budget on green actions
+  – Expected pollution reduction %
+  – Priority actions list (EV, trees, filters, public transport, etc.)
+• Economic + Environmental benefit summary
+
+Connect to Economic Loss module and OmegaCore suggestions.
+
+--------------------------------------------
+FEATURE E — Emergency Command Mode (Red Alert)
+--------------------------------------------
+Add a toggle or big button in the Smart City Control Hub:
+
+Name: "Emergency Command Mode"
+
+When ON:
+• UI goes into RED ALERT theme (subtle but visible)
+• Crisis Predictor runs at high frequency (simulated)
+• Show top 3 emergency actions to take RIGHT NOW
+• Show which Guardians are in high alert (Air, Disaster, Traffic etc.)
+• Add a small flashing alert icon and text: "CITY IN EMERGENCY MODE"
+
+When OFF:
+• Return to normal neon theme
+• Emergency indicators disappear
+
+====================================================
+TASK 2 — FIX ALL TEXT / WRITING / LABELS
+====================================================
+
+Clean up the entire UI copy.
+
+1) Correct all spelling and grammar:
+   • Fix any wrong words like "INITLIAZING" → "Initializing"
+   • Remove strange or broken English phrases
+   • Remove random all-caps text unless it's a label
+
+2) Make text consistent and professional:
+   • Use clear, short, modern English
+   • Example style:
+     - "System Online – Stable"
+     - "City Risk Score"
+     - "Future 2050 Simulation"
+   • Avoid over-complicated sci-fi words that are hard to read
+
+3) Standardize headings and labels:
+   • All section titles: Title Case
+   • Buttons: short and clear ("Initialize", "Run Analysis", "View Solutions")
+   • Tooltips: 1–2 line simple English explanations
+
+4) Dashboard clean-up:
+   • Replace "SYSTEM DEMO SIMULATION" with a better line:
+     "Smart City Intelligence Overview"
+   • Make sure all boxes have clear headings and meaning
+
+5) Smart City Control Hub:
+   • Use neat headings like:
+     "City Control Panel"
+     "State Control Panel"
+     "Guardian Status"
+     "OmegaCore Intelligence"
+     "Aura Booster Effects"
+     "Global Teleport View"
+   • Remove any duplicate or confusing phrases
+
+6) Keep the vibe futuristic but readable:
+   • Neon style stays, but text must be easy for judges and professors to understand
+   • No random jargon, no meaningless numbers
+
+7) Language:
+   • All on-screen text should be in clean English only (no mixed spelling).
+   • Keep tone professional but slightly futuristic.
+
+====================================================
+INTEGRATION & FINAL CLEANUP
+====================================================
+• All 5 new features MUST appear as separate, well-organized panels INSIDE the Smart City Control Hub.
+• They must be fully interactive with simulated data.
+• All modules (Dashboard, Pollution All Type, Analysis, Guardians, Omega Core, Aura, India Map, Smart City Control Hub) must remain ACTIVE from first load.
+• No "LOCKED" or "OFFLINE" screens anywhere.
+• Ensure there are no broken buttons, empty panels, or placeholder text left.
+
+Do NOT ask any follow-up questions.
+Directly update the existing codebase, regenerate the necessary components, and return the fully upgraded, polished Smart City AI platform.
