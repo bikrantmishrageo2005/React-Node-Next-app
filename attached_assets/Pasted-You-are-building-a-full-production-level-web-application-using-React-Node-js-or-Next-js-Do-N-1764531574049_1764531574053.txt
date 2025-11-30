@@ -1,0 +1,185 @@
+You are building a full production-level web application using React + Node.js (or Next.js).  
+Do NOT ask me follow-up questions.  
+Generate clean code, clean UI, and a fully working app with no watermark, no placeholder branding.
+
+App Name:
+“AetherVision UltraGuardian – India Future City AI Platform”
+
+============================================================
+CORE REQUIREMENTS
+============================================================
+Build a complete web app with:
+
+• Frontend (React or Next.js)
+• Backend API for simulation (Node.js / Express)
+• Interactive maps
+• Charts, graphs, forecast components
+• Search engine for India cities
+• Voice + chat based AI assistant
+• No watermark or branding
+• Fully modular, clean file structure
+
+============================================================
+PART 1 — CITY INPUT INTELLIGENCE
+============================================================
+User enters any Indian city name.
+App must automatically display:
+
+• All pollution types (Air, Water, Soil, Noise, Heat, Traffic, Industrial)
+• Which pollution is highest
+• Natural disaster → pollution impact
+• City risk score (0–100)
+• Category badge (Low / Medium / High / Extreme)
+• City explanation: “Why pollution is high here”
+
+Create components:
+<CityInput />
+<CityOverview />
+<PollutionBreakdown />
+<DisasterImpact />
+
+============================================================
+PART 2 — FUTURE PREDICTION ENGINE
+============================================================
+Backend must simulate future prediction:
+
+• 24 hours pollution forecast
+• 7 days forecast
+• 30 days forecast
+• Seasonal prediction
+• Disaster-linked spike prediction
+
+Create components:
+<FutureGraph />
+<RiskHeatmap />
+<HotspotPrediction />
+
+============================================================
+PART 3 — SOLUTION ENGINE
+============================================================
+Automatically generate:
+
+AIR solutions  
+WATER solutions  
+SOIL solutions  
+NOISE solutions  
+HEAT solutions  
+TRAFFIC/INDUSTRY solutions  
+
+Each solution must appear in <SolutionCard /> component.
+
+============================================================
+PART 4 — ACTION PLAN ENGINE
+============================================================
+Generate:
+
+• 24-hour action plan  
+• 7-day prevention plan  
+• 30-day improvement plan  
+• 1-year roadmap  
+
+Make a component:
+<ActionPlan />
+
+============================================================
+PART 5 — ALL INDIA ENGINE
+============================================================
+Build:
+
+• India map with clickable cities  
+• Compare 2 cities  
+• National pollution ranking  
+• Pollution + disaster multi-layer map  
+
+Components:
+<IndiaMap />
+<CityComparison />
+<RankingBoard />
+
+============================================================
+PART 6 — AETHERVISION OPENAI (AI Assistant)
+============================================================
+Add a smart assistant component:
+
+<AetherVisionAI />
+
+The assistant must:
+• Explain pollution
+• Explain disasters
+• Suggest city-specific solutions
+• Predict future scenarios
+• Guide city planning
+
+Integrate Replit’s AI API or mock API for now.
+
+============================================================
+PART 7 — OLD GUARDIAN (8-BRANCH SYSTEM)
+============================================================
+Build components for:
+
+<AirGuardian />
+<WaterGuardian />
+<SoilGuardian />
+<HeatGuardian />
+<TrafficGuardian />
+<IndustryGuardian />
+<DisasterGuardian />
+<EnergyGuardian />
+
+Each with graphs + indicators + status lights.
+
+============================================================
+PART 8 — OMEGA FUTURE GUARDIAN (4-LAYER AI)
+============================================================
+Create modules:
+
+1. Sense Layer → data collector  
+2. Brain Layer → prediction model  
+3. Action Layer → recommendations + improvement %  
+4. Experience Layer → UI + OmegaCore AI  
+
+Components:
+<SenseModule />
+<BrainModule />
+<ActionModule />
+<Omegacore />
+
+============================================================
+PART 9 — AURA BOOSTER MODULE (ALL 10 FEATURES)
+============================================================
+
+Add a dedicated folder: /components/aura/
+
+Include ALL 10 boosters:
+
+1) <EnvironmentalSoul />  
+2) <AetherShockTrigger />  
+3) <CausalityBrain />  
+4) <CityAvatar />  
+5) <DisasterShadow />  
+6) <GeneFingerprint />  
+7) <GuardianFusion />  
+8) <MemoryVault />  
+9) <SuccessProbability />  
+10) <AetherVisionAR />
+
+Each feature must have animations + futuristic UI.
+
+============================================================
+PART 10 — UI/UX REQUIREMENTS
+============================================================
+• Neon futuristic UI  
+• Animated cards  
+• Smooth map interactions  
+• Dark theme  
+• Responsive mobile-first design  
+• Use TailwindCSS  
+
+============================================================
+FINAL INSTRUCTION
+============================================================
+Do NOT ask anything.  
+Generate the ENTIRE codebase:  
+Frontend + Backend + Components + Styles + API routes + Map logic + Simulation logic.
+
+Create a complete, functional smart city AI platform from this prompt.
