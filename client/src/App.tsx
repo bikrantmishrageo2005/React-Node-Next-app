@@ -3,7 +3,8 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import MainLayout from "@/components/layout/MainLayout";
-import Dashboard from "@/pages/Dashboard";
+import CityControlHub from "@/pages/CityControlHub";
+import NationalControlHub from "@/pages/NationalControlHub";
 import MapPage from "@/pages/MapPage";
 import AnalysisPage from "@/pages/AnalysisPage";
 import GuardiansPage from "@/pages/GuardiansPage";
@@ -15,7 +16,8 @@ function Router() {
   return (
     <MainLayout>
       <Switch>
-        <Route path="/" component={Dashboard} />
+        <Route path="/" component={CityControlHub} />
+        <Route path="/national" component={NationalControlHub} />
         <Route path="/map" component={MapPage} />
         <Route path="/analysis" component={AnalysisPage} />
         <Route path="/guardians" component={GuardiansPage} />

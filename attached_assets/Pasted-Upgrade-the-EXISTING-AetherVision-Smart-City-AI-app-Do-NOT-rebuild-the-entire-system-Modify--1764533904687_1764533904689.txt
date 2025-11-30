@@ -1,0 +1,142 @@
+Upgrade the EXISTING AetherVision Smart City AI app.  
+Do NOT rebuild the entire system.  
+Modify the CURRENT project.
+
+This update includes THREE major tasks:
+1) Two Control Hubs (City + National)
+2) Full UI / text / layout cleanup
+3) Add a cute anime-style robot assistant
+
+====================================================
+TASK 1 — CREATE AND FINALIZE TWO CONTROL HUBS
+====================================================
+
+Keep the existing structure but reorganize modules cleanly:
+
+------------------------------
+1️⃣ CITY CONTROL HUB (Local)
+------------------------------
+Add left menu item:
+📌 City Control Hub
+
+Inside include ONLY city-level modules:
+
+• City Search  
+• City Overview  
+• City Risk Score  
+• City Pollution Breakdown (Air/Water/Soil/Noise/Traffic/Industry)  
+• City-specific Solutions  
+• 24h / 7d / 30d Forecast (City)  
+• City Crisis Predictor  
+• City Health Impact  
+• City Economic Loss  
+• City Future 2050  
+• City Guardians Panel  
+• OmegaCore (CITY mode)  
+• Aura Boosters (CITY mode)
+
+City Hub = lightweight, smooth & fast.
+
+----------------------------------
+2️⃣ NATIONAL CONTROL HUB (India)
+----------------------------------
+Add new left menu item:
+📌 National Control Hub
+
+This hub handles ONLY state + India-level analysis:
+
+• Full India Map (28 States + 8 UTs)  
+• State Pollution Scores  
+• State Disaster Risk  
+• State Risk Level  
+• State Solutions  
+• State Future 2050  
+• National Pollution Matrix  
+• National Crisis Predictor  
+• National Economic Loss  
+• National Health Impact  
+• Guardian Grid (NATION mode)  
+• OmegaCore (NATIONAL mode)  
+• Global Teleport View  
+• State Comparison Tool  
+• Nationwide Heatmap Layers
+
+National Hub = heavy analytics + advanced visual modules.
+
+--------------------------------------------------------
+IMPORTANT:
+City Control Hub and National Control Hub must be SEPARATE.
+Do NOT mix modules between the two hubs.
+--------------------------------------------------------
+
+====================================================
+TASK 2 — FIX UI, TEXT, SPACING & LAYOUT
+====================================================
+
+Clean EVERY UI element:
+
+• Fix all overlapping text  
+• Fix cut-off words  
+• Fix broken English labels  
+• Fix merged letters and spacing issues  
+• Fix alignment of numbers & headings  
+• Standardize font sizes  
+• Ensure padding on all cards  
+• Ensure all charts and boxes have proper margin  
+• Remove glitchy capitalizations  
+• Fix headings like:
+   “SYSTEM DEMO SIMULATION” → “Smart City System Overview”
+   “ANALYSIS” → “System Analysis”
+   “CRITC THREAT” → “Critical Threat”
+• Ensure all text is readable on dark neon UI  
+• Make all cards responsive  
+• Improve spacing between modules  
+• Fix any UI jitter or misaligned icons  
+• Fix left menu spacing + icons alignment  
+• Make EVERYTHING look clean, premium, and professional
+
+Do NOT remove any modules.  
+Do NOT rename Control Hubs.
+
+====================================================
+TASK 3 — ADD CUTE ANIME ROBOT GIRL ASSISTANT
+====================================================
+
+Add a floating AI assistant at bottom-right of ALL pages.
+
+Name: **AetherBot**
+
+Appearance:
+• Cute anime-style robot girl  
+• Slight idle animation (soft glow, float, blink)  
+• Transparent neon outline  
+• Fits AetherVision color theme (cyan/teal/purple)
+
+Behavior:
+• Icon floats at bottom-right corner  
+• On hover → expands slightly  
+• On click → opens a small chat bubble:
+  “Hi! I’m AetherBot. How can I assist you today?”
+• Chat bubble auto-hides after 5 seconds  
+• Should NOT overlap with UI buttons or panels  
+
+Make assistant visible in BOTH:
+• City Control Hub  
+• National Control Hub  
++ entire app.
+
+====================================================
+FINAL TASK
+====================================================
+
+Apply ALL THREE updates to the EXISTING codebase.
+Do NOT delete modules.
+Do NOT break routing.
+Do NOT ask follow-up questions.
+
+Just implement:
+✔ Two separate control hubs  
+✔ Full UI + text polish  
+✔ Cute anime robot assistant  
+
+Update everything cleanly and return the upgraded production-ready system.
