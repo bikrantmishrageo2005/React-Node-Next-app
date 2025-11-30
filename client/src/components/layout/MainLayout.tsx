@@ -9,7 +9,8 @@ import {
   Menu,
   X,
   Search,
-  Bell
+  Bell,
+  Layers
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -45,6 +46,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
       )}>
         <div className="flex flex-col gap-2 pr-4">
           <SidebarItem icon={LayoutDashboard} label="Dashboard" href="/" active={location === "/"} />
+          <SidebarItem icon={Layers} label="Pollution All Type" href="/pollution-types" active={location === "/pollution-types"} />
           <SidebarItem icon={Activity} label="Analysis" href="/analysis" active={location === "/analysis"} />
           <SidebarItem icon={Shield} label="Guardians" href="/guardians" active={location === "/guardians"} />
           <SidebarItem icon={Zap} label="Omega Core" href="/omega" active={location === "/omega"} />

@@ -8,6 +8,7 @@ import MapPage from "@/pages/MapPage";
 import AnalysisPage from "@/pages/AnalysisPage";
 import GuardiansPage from "@/pages/GuardiansPage";
 import OmegaPage from "@/pages/OmegaPage";
+import PollutionAllTypesPage from "@/pages/PollutionAllTypesPage";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -19,6 +20,7 @@ function Router() {
         <Route path="/analysis" component={AnalysisPage} />
         <Route path="/guardians" component={GuardiansPage} />
         <Route path="/omega" component={OmegaPage} />
+        <Route path="/pollution-types" component={PollutionAllTypesPage} />
         <Route component={NotFound} />
       </Switch>
     </MainLayout>
