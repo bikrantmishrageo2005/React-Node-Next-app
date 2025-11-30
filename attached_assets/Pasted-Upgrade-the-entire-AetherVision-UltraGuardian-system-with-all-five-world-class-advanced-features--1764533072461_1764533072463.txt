@@ -1,0 +1,130 @@
+Upgrade the entire AetherVision UltraGuardian system with all five world-class advanced features.  
+Do NOT ask questions.  
+Regenerate everything automatically.
+
+========================================================
+FEATURE 1 — POLLUTION TELEPORT VIEW (GLOBAL MODE)
+========================================================
+Add a new button: “Teleport View”.
+
+This feature must allow the user to instantly switch between:
+• City view  
+• State view  
+• India view  
+• Asia view  
+• World view  
+
+When teleporting:
+• Camera smoothly zooms out with neon effects  
+• Pollution layers update dynamically  
+• Heatmap becomes global  
+• Air, Water, Heat, Disaster layers become worldwide  
+• Add global pollution hotspots: Beijing, LA, Tokyo, London, Dubai, etc.
+
+========================================================
+FEATURE 2 — CITY CRISIS PREDICTOR (AI DANGER SCORE)
+========================================================
+Add an AI danger prediction engine to every city and state.
+
+For each location generate:
+• Crisis Danger Score (0–100)  
+• Probability of extreme pollution  
+• Probability of heatwave spike  
+• Probability of flood/drought  
+• 72-hour danger forecast  
+• 7-day risk prediction  
+• “Why this danger exists” explanation  
+
+Add UI:
+• CrisisMeter (neon red arc)  
+• “High-Risk Event Detected” animation  
+• OmegaCore emergency response suggestions  
+
+========================================================
+FEATURE 3 — HUMAN HEALTH IMPACT PANEL
+========================================================
+Add a new component: <HealthImpact />
+
+For every city and state show:
+• Asthma risk %  
+• Lung damage risk %  
+• Heart stress risk %  
+• Eye irritation level  
+• Heat stroke risk  
+• Child hazard score  
+• Elderly hazard score  
+• Overall Health Impact Index  
+
+Use simulated but realistic values.
+Integrate with:
+• Analysis  
+• Guardians  
+• Omega Core  
+
+========================================================
+FEATURE 4 — ECONOMIC LOSS CALCULATOR
+========================================================
+Add a new module: <EconomicLoss />
+
+For each state and city calculate:
+• Daily economic loss due to pollution  
+• Healthcare cost impact  
+• Productivity loss  
+• Industry shutdown loss  
+• Transportation delay loss  
+• Seasonal disaster damage estimate  
+
+Show charts:
+• Line graph (daily loss)  
+• Bar graph (sector-wise loss)  
+• Pie chart (loss distribution)  
+
+Add OmegaCore recommendations:
+• “How to reduce economic loss by 20%”  
+• “Which pollution type creates maximum financial damage”  
+
+========================================================
+FEATURE 5 — AETHERVISION FUTURE 2050 SIMULATION
+========================================================
+Add a futuristic simulation engine: <Future2050 />
+
+This module must simulate:
+• Pollution levels in 2030, 2040, 2050  
+• Heat rise forecast  
+• AQI future curve  
+• Population density growth  
+• Future green zones  
+• Future flood zones  
+• Sea-level rise prediction  
+• City survivability index  
+• “What will this city look like in 2050?”  
+• Neon hologram animation on map  
+
+Add timeline slider:
+• User drags from 2024 → 2030 → 2040 → 2050  
+• Map updates automatically  
+
+========================================================
+INTEGRATION REQUIREMENTS
+========================================================
+Integrate all five features with:
+• Dashboard  
+• Analysis  
+• Guardians  
+• Omega Core  
+• India Map  
+• Pollution All Type Board  
+• Aura Booster Module  
+
+Everything must be ACTIVE from the start.  
+No locked screens allowed.  
+Each feature must have animations, neon UI, and smooth transitions.
+
+========================================================
+FINAL TASK
+========================================================
+Rebuild the entire production app with all 5 new features,
+fully integrated, fully functional, no placeholders,  
+no dummy pages, no follow-up questions.
+
+Generate full code automatically.

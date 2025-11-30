@@ -5,12 +5,15 @@ import { X, Activity, Wind, Droplets, ThermometerSun, CheckCircle } from "lucide
 import { 
   Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer 
 } from "recharts";
+import TeleportView from "@/components/advanced/TeleportView";
+import { ViewMode } from "@/lib/advancedFeaturesData";
 
 // Simplified map path - in a real app this would be a proper GeoJSON
 const INDIA_MAP_PATH = "M350,650 L380,600 L420,580 L450,520 L420,450 L450,400 L500,380 L520,320 L480,280 L450,200 L400,150 L350,100 L300,120 L250,150 L220,200 L200,280 L180,350 L150,400 L180,480 L220,550 L280,600 Z";
 
 export default function IndiaMap() {
   const [selectedState, setSelectedState] = useState<string | null>(null);
+  const [viewMode, setViewMode] = useState<ViewMode>('India');
 
   const activeStateData = selectedState ? INDIA_STATES_DATA[selectedState] : null;
 
@@ -24,11 +27,15 @@ export default function IndiaMap() {
   ] : [];
 
   return (
-    <div className="relative w-full h-full min-h-[600px] flex items-center justify-center bg-black/20 rounded-3xl overflow-hidden border border-white/5">
+    <div className="relative w-full h-full min-h-[800px] flex items-center justify-center bg-black/20 rounded-3xl overflow-hidden border border-white/5">
+      <TeleportView currentMode={viewMode} onModeChange={setViewMode} />
+
       {/* Grid Overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,243,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(0,243,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px]" />
       
-      <svg viewBox="0 0 700 800" className="w-full h-full max-w-[600px] drop-shadow-[0_0_20px_rgba(0,243,255,0.2)] z-10">
+      <svg viewBox="0 0 700 800" className="w-full h-full max-w-[800px] drop-shadow-[0_0_20px_rgba(0,243,255,0.2)] z-10 transition-all duration-1000"
+        style={{ transform: viewMode === 'World' ? 'scale(0.2)' : viewMode === 'Asia' ? 'scale(0.5)' : 'scale(1)' }}
+      >
         <motion.path
           initial={{ pathLength: 0, opacity: 0 }}
           animate={{ pathLength: 1, opacity: 1 }}
