@@ -8,7 +8,7 @@ import { CITIES, generateForecast, SOLUTIONS, CityData } from "@/lib/mockData";
 import { motion } from "framer-motion";
 
 export default function Dashboard() {
-  const [selectedCity, setSelectedCity] = useState<CityData | null>(CITIES["New Delhi"]);
+  const [selectedCity, setSelectedCity] = useState<CityData | null>(CITIES["Mumbai"]);
   const [forecastData, setForecastData] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
 
