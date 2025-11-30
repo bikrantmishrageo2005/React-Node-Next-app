@@ -4,16 +4,17 @@ import CityOverview from "@/components/dashboard/CityOverview";
 import PollutionCharts from "@/components/dashboard/PollutionCharts";
 import SolutionCard from "@/components/dashboard/SolutionCard";
 import AetherAssistant from "@/components/ai/AetherAssistant";
-import { CITIES, generateForecast, SOLUTIONS, CityData } from "@/lib/mockData";
+import { CITIES, DEMO_CITY_DATA, generateForecast, SOLUTIONS, CityData } from "@/lib/mockData";
 import { motion } from "framer-motion";
 
 export default function Dashboard() {
-  const [selectedCity, setSelectedCity] = useState<CityData | null>(CITIES["Mumbai"]);
-  const [forecastData, setForecastData] = useState<any[]>([]);
+  // Initialize with DEMO data instead of null
+  const [selectedCity, setSelectedCity] = useState<CityData>(DEMO_CITY_DATA);
+  const [forecastData, setForecastData] = useState<any[]>(generateForecast());
   const [loading, setLoading] = useState(false);
 
+  // Ensure data is fresh on mount
   useEffect(() => {
-    // Initial load
     setForecastData(generateForecast());
   }, []);
 
@@ -25,6 +26,9 @@ export default function Dashboard() {
       if (city) {
         setSelectedCity(city);
         setForecastData(generateForecast());
+      } else {
+        // If not found, maybe fallback to demo or keep current but show toast? 
+        // For now, let's keep current state to avoid breaking UI
       }
       setLoading(false);
     }, 1500);
@@ -43,7 +47,7 @@ export default function Dashboard() {
           <div className="w-16 h-16 border-4 border-neon-cyan border-t-transparent rounded-full animate-spin" />
           <p className="text-neon-cyan font-orbitron animate-pulse">SCANNING REGIONAL DATA...</p>
         </div>
-      ) : selectedCity ? (
+      ) : (
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -88,10 +92,6 @@ export default function Dashboard() {
           </div>
 
         </motion.div>
-      ) : (
-        <div className="text-center text-gray-500 font-orbitron mt-20">
-          AWAITING TARGET INPUT
-        </div>
       )}
 
       <AetherAssistant />

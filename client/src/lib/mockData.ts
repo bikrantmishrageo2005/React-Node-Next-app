@@ -1,4 +1,3 @@
-
 export type PollutionType = 'Air' | 'Water' | 'Soil' | 'Noise' | 'Heat' | 'Traffic' | 'Industrial';
 
 export interface PollutionData {
@@ -24,6 +23,32 @@ export interface CityData {
   };
   explanation: string;
 }
+
+export const MOCK_POLLUTION_BREAKDOWN: PollutionData[] = [
+  { type: 'Air', value: 120, unit: 'AQI', status: 'Unhealthy', trend: 'up' },
+  { type: 'Noise', value: 75, unit: 'dB', status: 'Moderate', trend: 'stable' },
+  { type: 'Water', value: 60, unit: 'WQI', status: 'Moderate', trend: 'down' },
+  { type: 'Heat', value: 38, unit: '°C', status: 'Unhealthy', trend: 'up' },
+  { type: 'Traffic', value: 80, unit: 'Index', status: 'Unhealthy', trend: 'up' },
+  { type: 'Industrial', value: 65, unit: 'Index', status: 'Moderate', trend: 'stable' },
+  { type: 'Soil', value: 50, unit: 'SQI', status: 'Good', trend: 'down' },
+];
+
+export const DEMO_CITY_DATA: CityData = {
+  id: "demo",
+  name: "SYSTEM DEMO SIMULATION",
+  coordinates: [20.5937, 78.9629],
+  riskScore: 65,
+  category: "Medium",
+  pollutionBreakdown: MOCK_POLLUTION_BREAKDOWN,
+  disasterRisk: {
+    type: "Monsoon Surge",
+    probability: 45,
+    impact: "Medium",
+    description: "Simulated data pattern indicating seasonal variability."
+  },
+  explanation: "Running demonstration simulation. All systems active and monitoring mock telemetry."
+};
 
 export const CITIES: Record<string, CityData> = {
   "New Delhi": {
@@ -122,4 +147,15 @@ export const generateForecast = () => {
     });
   }
   return data;
+};
+
+export const GUARDIAN_STATUS = {
+  Air: { status: "ONLINE", load: 85, efficiency: 92 },
+  Water: { status: "ONLINE", load: 60, efficiency: 88 },
+  Soil: { status: "ONLINE", load: 45, efficiency: 95 },
+  Heat: { status: "ONLINE", load: 70, efficiency: 90 },
+  Traffic: { status: "ONLINE", load: 95, efficiency: 78 },
+  Industry: { status: "ONLINE", load: 55, efficiency: 85 },
+  Disaster: { status: "ACTIVE", load: 30, efficiency: 99 },
+  Energy: { status: "OPTIMAL", load: 80, efficiency: 94 }
 };
