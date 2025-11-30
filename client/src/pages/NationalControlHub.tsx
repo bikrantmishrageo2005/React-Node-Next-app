@@ -50,9 +50,9 @@ export default function NationalControlHub() {
       </section>
 
       {/* Section 3: Guardian Grid & Omega Core */}
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
         <section className="space-y-6">
-          <h3 className="text-2xl font-orbitron text-white flex items-center gap-2">
+          <h3 className="text-2xl font-orbitron text-white flex items-center gap-2 tracking-wider">
             <span className="w-2 h-8 bg-neon-green rounded-full" />
             Guardian Defense Grid
           </h3>
@@ -62,7 +62,7 @@ export default function NationalControlHub() {
         </section>
 
         <section className="space-y-6">
-          <h3 className="text-2xl font-orbitron text-white flex items-center gap-2">
+          <h3 className="text-2xl font-orbitron text-white flex items-center gap-2 tracking-wider">
             <span className="w-2 h-8 bg-neon-yellow rounded-full" />
             Omega Core Intelligence
           </h3>

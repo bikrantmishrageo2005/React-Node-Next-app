@@ -99,16 +99,20 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50 box-border;
   }
   body {
     @apply bg-background text-foreground font-sans antialiased selection:bg-neon-cyan/30 selection:text-neon-cyan;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-wider leading-tight;
+    letter-spacing: 0.05em;
   }
 }
 
 @layer utilities {
   .glass-panel {
-    @apply bg-black/40 backdrop-blur-md border border-white/10 shadow-lg;
+    @apply bg-black/40 backdrop-blur-md border border-white/10 shadow-lg p-5;
   }
   
   .neon-border {

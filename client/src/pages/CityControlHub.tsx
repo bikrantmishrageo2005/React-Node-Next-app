@@ -95,11 +95,11 @@ export default function CityControlHub() {
           <EmergencyCommandMode active={emergencyMode} onToggle={() => setEmergencyMode(!emergencyMode)} />
 
           {/* MAIN DASHBOARD GRID */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
             {/* Left Col: Overview + Crisis */}
-            <div className="space-y-8">
+            <div className="space-y-5">
               <div className="glass-panel p-6 rounded-xl">
-                <h3 className="text-gray-400 font-orbitron text-lg mb-4">City Overview</h3>
+                <h3 className="text-gray-400 font-orbitron text-lg mb-4 tracking-wider">City Overview</h3>
                 <CityOverview data={selectedCity} />
               </div>
               <CityCrisisPredictor data={crisisData} />
@@ -107,9 +107,9 @@ export default function CityControlHub() {
             </div>
 
             {/* Middle Col: Forecast + Health + Economic */}
-            <div className="space-y-8">
+            <div className="space-y-5">
                <div className="glass-panel p-6 rounded-xl">
-                 <h3 className="text-gray-400 font-orbitron text-lg mb-4">Real-time Forecast</h3>
+                 <h3 className="text-gray-400 font-orbitron text-lg mb-4 tracking-wider">Real-time Forecast</h3>
                  <PollutionCharts breakdown={selectedCity.pollutionBreakdown} forecast={forecastData} />
                </div>
                <HealthImpactPanel data={healthData} />
@@ -118,13 +118,13 @@ export default function CityControlHub() {
             </div>
 
             {/* Right Col: Solutions + Future Sim */}
-            <div className="space-y-8">
+            <div className="space-y-5">
                <Future2050Simulation data={futureData} />
                <DisasterAftershockTracker data={aftershockData} />
                <GreenBudgetPlanner />
                
                <div className="glass-panel p-6 rounded-xl">
-                <h3 className="text-gray-400 font-orbitron text-xl mb-6 flex items-center gap-2">
+                <h3 className="text-gray-400 font-orbitron text-xl mb-6 flex items-center gap-2 tracking-wider">
                   <span className="w-2 h-2 bg-neon-green rounded-full" />
                   Recommended Interventions
                 </h3>
