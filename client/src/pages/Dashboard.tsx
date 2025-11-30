@@ -8,8 +8,8 @@ import { CITIES, DEMO_CITY_DATA, generateForecast, SOLUTIONS, CityData } from "@
 import { motion } from "framer-motion";
 
 export default function Dashboard() {
-  // Initialize with DEMO data instead of null
-  const [selectedCity, setSelectedCity] = useState<CityData>(DEMO_CITY_DATA);
+  // Initialize with Berhampur data
+  const [selectedCity, setSelectedCity] = useState<CityData>(CITIES["Berhampur"]);
   const [forecastData, setForecastData] = useState<any[]>(generateForecast());
   const [loading, setLoading] = useState(false);
 

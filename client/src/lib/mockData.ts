@@ -119,6 +119,29 @@ export const CITIES: Record<string, CityData> = {
       description: "Loss of wetlands leads to urban flooding during heavy rains."
     },
     explanation: "Exponential vehicle growth causes traffic-related emissions despite better airflow."
+  },
+  "Berhampur": {
+    id: "berhampur",
+    name: "Berhampur",
+    coordinates: [19.3149, 84.7941],
+    riskScore: 58,
+    category: "Medium",
+    pollutionBreakdown: [
+      { type: 'Air', value: 95, unit: 'AQI', status: 'Moderate', trend: 'stable' },
+      { type: 'Water', value: 85, unit: 'WQI', status: 'Unhealthy', trend: 'up' },
+      { type: 'Soil', value: 60, unit: 'SQI', status: 'Moderate', trend: 'stable' },
+      { type: 'Noise', value: 65, unit: 'dB', status: 'Moderate', trend: 'down' },
+      { type: 'Heat', value: 36, unit: '°C', status: 'Unhealthy', trend: 'up' },
+      { type: 'Traffic', value: 70, unit: 'Index', status: 'Moderate', trend: 'up' },
+      { type: 'Industrial', value: 40, unit: 'Index', status: 'Good', trend: 'stable' },
+    ],
+    disasterRisk: {
+      type: "Cyclone",
+      probability: 80,
+      impact: "High",
+      description: "High vulnerability to Bay of Bengal cyclones impacting coastal infrastructure."
+    },
+    explanation: "Coastal humidity traps particulate matter; rapid urbanization stressing water quality and waste management systems."
   }
 };
 
