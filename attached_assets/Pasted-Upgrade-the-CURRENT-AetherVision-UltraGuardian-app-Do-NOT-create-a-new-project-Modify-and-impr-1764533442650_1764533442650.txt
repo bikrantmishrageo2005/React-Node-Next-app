@@ -6,16 +6,15 @@ There are TWO main tasks:
 1) Add 5 new Smart City features
 2) Fix and clean up ALL text / writing / labels in the UI
 
-====================================================
+
 TASK 1 — ADD 5 NEW SMART CITY FEATURES
-====================================================
+
 
 All 5 features must live INSIDE the "Smart City Control Hub" as new sections or panels.
 They must also connect with the existing city/state data, OmegaCore, and Guardians.
-
---------------------------------------------
+
 FEATURE A — Citizen Live Sentiment Radar
---------------------------------------------
+
 Add a new panel in the Smart City Control Hub:
 
 Name: "Citizen Sentiment Radar"
@@ -30,9 +29,9 @@ UI:
 • Circular radar or gauge
 • Color changes with sentiment (green → yellow → red)
 
---------------------------------------------
+
 FEATURE B — Crime–Pollution Link Engine
---------------------------------------------
+
 Add panel: "Crime–Pollution Link"
 
 For each city/state:
@@ -46,9 +45,9 @@ For each city/state:
 
 Use simulated but consistent data.
 
---------------------------------------------
+
 FEATURE C — Disaster Aftershock Pollution Tracker
---------------------------------------------
+
 Add panel: "Disaster Aftershock Tracker"
 
 For each disaster type (flood, cyclone, earthquake, heatwave):
@@ -61,9 +60,9 @@ For each disaster type (flood, cyclone, earthquake, heatwave):
 
 Integrate with Crisis Predictor and Guardians.
 
---------------------------------------------
+
 FEATURE D — AI Green Budget Planner
---------------------------------------------
+
 Add panel: "Green Budget Planner"
 
 For each city/state:
@@ -76,9 +75,9 @@ For each city/state:
 
 Connect to Economic Loss module and OmegaCore suggestions.
 
---------------------------------------------
+
 FEATURE E — Emergency Command Mode (Red Alert)
---------------------------------------------
+
 Add a toggle or big button in the Smart City Control Hub:
 
 Name: "Emergency Command Mode"
@@ -94,9 +93,9 @@ When OFF:
 • Return to normal neon theme
 • Emergency indicators disappear
 
-====================================================
+
 TASK 2 — FIX ALL TEXT / WRITING / LABELS
-====================================================
+
 
 Clean up the entire UI copy.
 
@@ -141,9 +140,9 @@ Clean up the entire UI copy.
    • All on-screen text should be in clean English only (no mixed spelling).
    • Keep tone professional but slightly futuristic.
 
-====================================================
+
 INTEGRATION & FINAL CLEANUP
-====================================================
+
 • All 5 new features MUST appear as separate, well-organized panels INSIDE the Smart City Control Hub.
 • They must be fully interactive with simulated data.
 • All modules (Dashboard, Pollution All Type, Analysis, Guardians, Omega Core, Aura, India Map, Smart City Control Hub) must remain ACTIVE from first load.
